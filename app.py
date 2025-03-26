@@ -7,7 +7,7 @@ import plotly.express as px
 df = pd.read_csv("dados.csv")
 
 # Calcular métricas principais
-total_gasto = df["gasto"].sum()
+total_gasto = df["valor usado (BRL)"].sum()
 total_compras = df["compras"].sum()
 roas_medio = (df["valor_conversao"].sum() / total_gasto) if total_gasto > 0 else 0
 valor_vendas = df["valor_conversao"].sum()
