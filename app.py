@@ -28,8 +28,8 @@ col4.metric("Valor de Vendas", f"R$ {valor_vendas:,.2f}")
 col5.metric("Custo por Compra Médio", f"R$ {custo_por_compra:,.2f}")
 
 # Gráficos
-fig_gasto = px.bar(df, x="campanha", y="gasto", title="Gasto por Campanha")
-fig_compras = px.bar(df, x="campanha", y="compras", title="Compras por Campanha")
+fig_gasto = px.bar(df, x="nome da campanha", y="valor usado (BRL)", title="Gasto por Campanha")
+fig_compras = px.bar(df, x="nome da campanha", y="compras", title="Compras por Campanha")
 st.plotly_chart(fig_gasto, use_container_width=True)
 st.plotly_chart(fig_compras, use_container_width=True)
 
